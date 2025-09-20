@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-GEOFOFANA - ANYAMA - CARTE</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Patientez SVP...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1>E-GEOFOFANA - SYSTEME DE GESTION DES COLLECTIVITES LOCALES</h1>
+            </div>
+            <div class="header-right">
+                <button class="btn-login">CONNEXION</button>
+                <div class="logo-cntig">
+                    <span>wDev</span>
+                </div>
+            </div>
+        </header>
+       <div class="main-layout">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="wave-graphic"></div>
+                </div>
+                <div class="sidebar-content">
+                    <div class="module-title">
+                        <span class="material-symbols-outlined">folder</span>
+                        COMMUNICATION
+                    </div>
+                    <div class="module-divider"></div>
+                    <nav class="sidebar-nav">
+                        <a href="#" class="nav-link active">
+                            <span class="nav-arrow">></span>
+                            CARTE
+                        </a>
+                        <a href="#" class="nav-link">SITE WEB</a>
+                        <a href="#" class="nav-link">PROJETS</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- <div class="content-header">
+                    <h2>MODULE COMMUNICATION -> CARTE</h2>
+                    <div class="stats-info">
+                        <span id="parcelleCount">Chargement...</span>
+                    </div>
+                </div> -->
+
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="commune">Commune</label>
+                        <select id="commune" disabled>
+                            <option>ANYAMA</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="quartier">Quartier</label>
+                        <select id="quartier">
+                            <option value="">-- Sélectionner --</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="ilot">Ilot</label>
+                        <select id="ilot">
+                            <option value="">-- Sélectionner --</option>
+                        </select>
+                    </div>
+                    
+                    <!-- <div class="filter-group">
+                        <label>
+                            <input type="checkbox" id="showResidentiel" checked>
+                            Afficher Parcelles
+                        </label>
+                    </div> -->
+
+                    <div class="filter-group">
+                        <label for="lot">Lot</label>
+                        <select id="lot">
+                            <option value="">-- Sélectionner --</option>
+                        </select>
+                    </div>
+                    
+                    <!-- <div class="filter-group">
+                        <button type="button" id="resetFilters" class="btn-reset">
+                            <span class="material-symbols-outlined">refresh</span>
+                            Réinitialiser
+                        </button>
+                    </div> -->
+                    
+                </div>
+
+                <!-- Map Container -->
+                <div class="map-container">
+                    <div id="map">
+
+                     
+
+                    </div>
+                    
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <div class="pan-control">
+                            <div class="pan-button active">↖</div>
+                        </div>
+                        <div class="zoom-control">
+                            <div class="zoom-button">+</div>
+                            <div class="zoom-slider"></div>
+                            <div class="zoom-button">-</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scale Bar -->
+                    <div class="scale-bar">
+                        <div class="scale-line"></div>
+                        <div class="scale-labels">
+                            <span>0</span>
+                            <span>200</span>
+                            <span>400</span>
+                            <span>600 m</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Theme Widget on Map -->
+                    <div class="map-widget theme-widget">
+                        <div class="widget-header">
+                            <span>THEME</span>
+                            <span class="material-symbols-outlined expand-icon">expand_less</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="theme" value="lot">
+                                    <span class="radio-custom"></span>
+                                    <span>Quartier</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="theme" value="marche" checked>
+                                    <span class="radio-custom"></span>
+                                    <span>Ilot</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="theme" value="mise-en-valeur">
+                                    <span class="radio-custom"></span>
+                                    <span>Lot</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Legend Widget on Map -->
+                    <div class="map-widget legend-widget">
+                        <div class="widget-header">
+                            <span>Legende</span>
+                            <span class="material-symbols-outlined expand-icon">expand_less</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="legend-list">
+                                <div class="legend-header">
+                                    <span>Nature des Parcelles</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #2ecc71;"></span>
+                                    <span>Bâti</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #f39c12;"></span>
+                                    <span>Non Bâti</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #e74c3c;"></span>
+                                    <span>En Construction</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #9b59b6;"></span>
+                                    <span>Inachevé</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #f1c40f;"></span>
+                                    <span>Terrain Nu Clôturé</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #95a5a6;"></span>
+                                    <span>Autres</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body> 
+</html>

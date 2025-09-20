@@ -1,0 +1,317 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.26244",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [385572.35019099, 611102.48950141, 108.767],
+              [385548.26411608, 611063.93067628, 108.767],
+              [385556.94392398, 611112.13403026, 108.767],
+              [385572.35019099, 611102.48950141, 108.767]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 26244,
+        "id": 26244,
+        "commune": "ANYAMA",
+        "quartiers": "AHOUABO",
+        "ilot": "11",
+        "lot": "47196",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.185",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381050.8403, 616966.2342, 0],
+              [381084.034, 616979.8282, 0],
+              [381092.4381, 616959.3072, 0],
+              [381059.2444, 616945.7132, 0],
+              [381050.8403, 616966.2342, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 185,
+        "id": 185,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": null,
+        "lot": "46",
+        "nature_lot": "Abandonné",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.209",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [380522.3002, 607425.5991, -0.0000235],
+              [380499.2162, 607423.0391, -0.0000235],
+              [380496.8062, 607451.2671, -0.0000235],
+              [380518.3162, 607453.8931, -0.0000235],
+              [380522.3002, 607425.5991, -0.0000235]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 209,
+        "id": 209,
+        "commune": "ANYAMA",
+        "quartiers": "EBIMPE",
+        "ilot": null,
+        "lot": "3456",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.29040",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [385782.23475457, 603279.52155977, 0],
+              [385759.99375456, 603275.67055977, 0],
+              [385756.67275456, 603294.84955977, 0],
+              [385782.23475457, 603279.52155977, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 29040,
+        "id": 29040,
+        "commune": "ANYAMA",
+        "quartiers": "ABOBO ANYAMA PK18",
+        "ilot": "639",
+        "lot": "1039",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.147",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381270.7258, 616792.7475, 0],
+              [381245.8145, 616782.5455, 0],
+              [381224.4138, 616802.036, 0],
+              [381245.5619, 616815.6654, 0],
+              [381266.71, 616829.2947, 0],
+              [381295.6371, 616802.9496, 0],
+              [381270.7258, 616792.7475, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 147,
+        "id": 147,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "24",
+        "lot": "108/109",
+        "nature_lot": "Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.148",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381230.3474, 616612.6756, 0],
+              [381207.3152, 616608.2189, 0],
+              [381189.9347, 616650.6585, 0],
+              [381210.8182, 616660.3618, 0],
+              [381230.3474, 616612.6756, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 148,
+        "id": 148,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "30",
+        "lot": "144",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.149",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381066.666, 616722.1508, 0],
+              [381041.3709, 616711.7916, 0],
+              [381034.6255, 616728.2624, 0],
+              [381059.9206, 616738.6216, 0],
+              [381066.666, 616722.1508, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 149,
+        "id": 149,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "22",
+        "lot": "82",
+        "nature_lot": "En Construction",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.174",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381180.6062, 616782.8245, 0],
+              [381172.1415, 616803.4934, 0],
+              [381192.3065, 616811.7517, 0],
+              [381210.5871, 616795.1028, 0],
+              [381180.6062, 616782.8245, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 174,
+        "id": 174,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "23",
+        "lot": "89",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.175",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [381160.3548, 616798.6663, 0],
+              [381135.7203, 616788.5776, 0],
+              [381123.4375, 616818.5696, 0],
+              [381148.072, 616828.6583, 0],
+              [381160.3548, 616798.6663, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 175,
+        "id": 175,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "23",
+        "lot": "86",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parcelle_anyama.1",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [380984.4747, 616567.0573, 0],
+              [380952.0278, 616560.7787, 0],
+              [380939.5646, 616591.211, 0],
+              [380930.3623, 616613.6811, 0],
+              [380920.9183, 616636.7414, 0],
+              [380912.3366, 616657.696, 0],
+              [380903.4391, 616679.4217, 0],
+              [380895.2534, 616699.4095, 0],
+              [380886.2364, 616721.4271, 0],
+              [380916.225, 616733.7085, 0],
+              [380925.242, 616711.6909, 0],
+              [380933.4277, 616691.7032, 0],
+              [380942.3252, 616669.9775, 0],
+              [380950.9069, 616649.0229, 0],
+              [380960.3509, 616625.9626, 0],
+              [380969.5532, 616603.4925, 0],
+              [380984.4747, 616567.0573, 0]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "gid": 1,
+        "id": 1,
+        "commune": "ANYAMA",
+        "quartiers": "THOMASSET",
+        "ilot": "39",
+        "lot": "164/165/166/167/168/169/170",
+        "nature_lot": "Non Bâti",
+        "statut": 0
+      }
+    }
+  ],
+  "totalFeatures": 48571,
+  "numberMatched": 48571,
+  "numberReturned": 10,
+  "timeStamp": "2025-09-19T17:59:08.991Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::404000"
+    }
+  }
+}

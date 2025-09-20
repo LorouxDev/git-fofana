@@ -1,0 +1,24 @@
+{
+  "name": "web-mapping-anyama",
+  "version": "1.0.0",
+  "description": "Application de cartographie web pour la commune d'Anyama",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "mapping",
+    "gis",
+    "anyama",
+    "carte"
+  ],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}
+
